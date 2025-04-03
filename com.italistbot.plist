@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>com.italistbot.main</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/Users/flippackstation5/python_scripts/italistbot/venv/bin/python3</string>
+            <string>/Users/flippackstation5/python_scripts/italistbot/main.py</string>
+        </array>
+        <key>WorkingDirectory</key>
+        <string>/Users/flippackstation5/python_scripts/italistbot</string>
+        <key>StartInterval</key>
+        <integer>3600</integer> <!-- 1 hour in seconds -->
+        <key>StandardOutPath</key>
+        <string>/Users/flippackstation5/python_scripts/italistbot/logs/main.out</string>
+        <key>StandardErrorPath</key>
+        <string>/Users/flippackstation5/python_scripts/italistbot/logs/main.err</string>
+    </dict>
+</plist>

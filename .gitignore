@@ -1,0 +1,7 @@
+__pycache__
+.env
+*.db
+*.csv
+gsheet_creds.json
+venv/
+orders/
