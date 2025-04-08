@@ -9,6 +9,7 @@ from utils.selenium_setup import get_driver
 from utils.sql_utils import get_product_url
 from utils.email_utils import send_email
 from login import italist_login, dismiss_popup
+from scrape_inventory import scrape_inventory
 from dotenv import load_dotenv
 import shutil
 import csv
@@ -345,3 +346,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    scrape_inventory()
