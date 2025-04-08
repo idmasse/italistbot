@@ -31,3 +31,6 @@ def scrape_inventory():
         print(f"file uploaded to ftp: /in/inventory/{local_filename}")
     finally:
         ftp.quit()
+
+if __name__ == '__main__':
+    scrape_inventory()
