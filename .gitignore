@@ -5,3 +5,4 @@ __pycache__
 gsheet_creds.json
 venv/
 orders/
+inventory.csv
