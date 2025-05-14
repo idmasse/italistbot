@@ -18,18 +18,6 @@ import os
 
 load_dotenv()
 
-def dismiss_popup(driver):
-    browser_wait = WebDriverWait(driver, 5)
-    try:
-        browser_wait.until(EC.presence_of_element_located((By.ID, 'mcforms-3551-10410')))
-        shadow_host = driver.find_element(By.ID, 'mcforms-3551-10410')
-        shadow_root = driver.execute_script("return arguments[0].shadowRoot", shadow_host)
-        close_button = shadow_root.find_element(By.ID, 'el_kj1d-fdug3')
-        close_button.click()
-        print('popup closed')
-    except Exception:
-        pass
-
 def add_variant_param(url: str, sku: str) -> str:
     q_index = url.find('?')
     if q_index == -1:
@@ -193,7 +181,7 @@ def main():
                                         el_wait(By.CLASS_NAME, 'product-info-card')
 
                                     print('Adding item to cart')
-                                    add_to_bag_btn = click_wait(By.CLASS_NAME, 'jsx-121994661')
+                                    add_to_bag_btn = click_wait(By.CLASS_NAME, 'jsx-1630625281')
                                     add_to_bag_btn.click()
                                     time.sleep(3)
 
