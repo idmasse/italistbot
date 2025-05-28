@@ -181,7 +181,7 @@ def main():
                                         el_wait(By.CLASS_NAME, 'product-info-card')
 
                                     print('Adding item to cart')
-                                    add_to_bag_btn = click_wait(By.CLASS_NAME, 'jsx-1630625281')
+                                    add_to_bag_btn = click_wait(By.CLASS_NAME, 'jsx-2719816334')
                                     add_to_bag_btn.click()
                                     time.sleep(3)
 
@@ -198,7 +198,7 @@ def main():
 
                                 # Checkout process for this PO
                                 print(f"Starting checkout for PO_num {po_num}")
-                                checkout_btn = click_wait(By.CLASS_NAME, 'jsx-1822037866')
+                                checkout_btn = click_wait(By.CLASS_NAME, 'jsx-838475951')
                                 checkout_btn.click()
                                 
                                 shipping_info = order["shipping_info"]
