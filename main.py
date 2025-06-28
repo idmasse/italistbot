@@ -334,5 +334,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    scrape_inventory_success = scrape_inventory()
-    sys.exit(0 if scrape_inventory_success else 1)
+    scrape_inventory()
