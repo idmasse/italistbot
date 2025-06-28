@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 import shutil
 import csv
 import time
-import os
+import os, sys
 
 load_dotenv()
 
@@ -334,4 +334,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    scrape_inventory()
+    scrape_inventory_success = scrape_inventory()
+    sys.exit(0 if scrape_inventory_success else 1)
