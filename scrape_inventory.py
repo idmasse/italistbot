@@ -1,6 +1,7 @@
 import requests
 import os
 from utils.ftp_utils import connect_ftp, upload_files
+import sys
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -33,4 +34,5 @@ def scrape_inventory():
         ftp.quit()
 
 if __name__ == '__main__':
-    scrape_inventory()
+    scrape_inventory_success = scrape_inventory()
+    sys.exit(0 if scrape_inventory_success else 1)
