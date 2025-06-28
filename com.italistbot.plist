@@ -14,8 +14,8 @@
         <key>StartInterval</key>
         <integer>3600</integer> <!-- 1 hour in seconds -->
         <key>StandardOutPath</key>
-        <string>/Users/flippackstation5/python_scripts/italistbot/logs/main.out</string>
+        <string>/Users/flippackstation5/python_scripts/italistbot/logs/main.out.log</string>
         <key>StandardErrorPath</key>
-        <string>/Users/flippackstation5/python_scripts/italistbot/logs/main.err</string>
+        <string>/Users/flippackstation5/python_scripts/italistbot/logs/main.err.log</string>
     </dict>
 </plist>
